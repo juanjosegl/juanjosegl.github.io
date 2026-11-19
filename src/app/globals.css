@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #fbfcfe;
+  --ink: #1b2430;
+  --muted: #5b6573;
+  --line: #dde2ea;
+  --accent: #2d4a86;
+  --ok: #2e7d4f;
+  --wait: #b7791f;
+  --bad: #b42318;
+  --panel: #f1f4f9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #12161d;
+    --ink: #e6eaf0;
+    --muted: #9aa4b2;
+    --line: #2a313c;
+    --accent: #8fb0f0;
+    --ok: #5cc28a;
+    --wait: #e3a948;
+    --bad: #f0857a;
+    --panel: #1a2029;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-ok: var(--ok);
+  --color-wait: var(--wait);
+  --color-bad: var(--bad);
+  --color-panel: var(--panel);
+  --font-sans: var(--font-schibsted);
+  --font-mono: var(--font-jetbrains);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+a {
+  text-underline-offset: 0.2em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* The one moment of motion: the status dot pulses while an API is waking up. */
+@keyframes pulse-dot {
+  50% {
+    opacity: 0.35;
+  }
+}
+.dot-waking {
+  animation: pulse-dot 1.2s ease-in-out infinite;
+}
