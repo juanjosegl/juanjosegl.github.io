@@ -4,7 +4,6 @@ export const links = {
   email: "jjgutierrezlasso@gmail.com",
   github: "https://github.com/juanjosegl",
   linkedin: "https://www.linkedin.com/in/juanjosegl",
-  cv: "/cv/CV-Juan-Jose-Gutierrez-Lasso.pdf",
   siteRepo: "https://github.com/juanjosegl/juanjosegl.github.io",
 };
 
@@ -43,6 +42,7 @@ const es = {
     intro:
       "Construyo interfaces en Vue.js y Next.js y APIs en NestJS y Laravel. Llevo más de un año trabajando en productos para EE. UU. desde Popayán, Colombia, y busco mi próximo equipo remoto.",
     cv: "Descargar CV",
+    cvFile: "/cv/CV-Juan-Jose-Gutierrez-Lasso.pdf",
     email: "Escribirme",
   },
   status: {
@@ -158,7 +158,8 @@ const en: Content = {
     role: "Remote Full Stack Developer",
     intro:
       "I build interfaces with Vue.js and Next.js and APIs with NestJS and Laravel. I've spent over a year working on products for US companies from Popayán, Colombia, and I'm looking for my next remote team.",
-    cv: "Download CV (Spanish)",
+    cv: "Download CV",
+    cvFile: "/cv/CV-Juan-Jose-Gutierrez-Lasso-EN.pdf",
     email: "Email me",
   },
   status: {
@@ -235,9 +236,9 @@ const en: Content = {
   ],
   educationTitle: "Education",
   education: [
-    { name: "Systems Engineering", place: "Corporación Universitaria Comfacauca – Unicomfacauca", when: "2020 – April 2027" },
-    { name: "CloudForge AI 5.0 diploma: Cloud Native, DevSecOps, Kubernetes and MLOps", place: "Degree requirement", when: "2026" },
-    { name: "Technical high school diploma in Software Development", place: "Colegio Técnico Comfacauca", when: "2019" },
+    { name: "B.S. in Systems Engineering", place: "Corporación Universitaria Comfacauca – Unicomfacauca", when: "2020 – April 2027" },
+    { name: "CloudForge AI 5.0 Diploma: Cloud Native, DevSecOps, Kubernetes and MLOps", place: "Degree requirement", when: "2026" },
+    { name: "Technical High School Diploma in Software Development", place: "Colegio Técnico Comfacauca", when: "2019" },
     {
       name: "28 courses on Código Facilito",
       place: "Node.js, React, TypeScript, PHP 8, Laravel, Docker, Git, software architecture, QA testing, Spring Boot and Machine Learning",

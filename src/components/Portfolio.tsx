@@ -60,7 +60,7 @@ export default function Portfolio({ t }: { t: Content }) {
             <p className="mt-4 text-xl font-medium text-accent sm:text-2xl">{t.hero.role}</p>
             <p className="mt-5 max-w-[60ch] text-lg leading-relaxed text-muted">{t.hero.intro}</p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <a href={links.cv} download className="rounded-md bg-accent px-4 py-2.5 font-medium text-paper hover:opacity-90">
+              <a href={t.hero.cvFile} download className="rounded-md bg-accent px-4 py-2.5 font-medium text-paper hover:opacity-90">
                 {t.hero.cv}
               </a>
               <a href={`mailto:${links.email}`} className="rounded-md border border-line px-4 py-2.5 font-medium hover:border-accent">
@@ -193,7 +193,7 @@ export default function Portfolio({ t }: { t: Content }) {
               <a href={links.github} {...ext} className="underline hover:text-accent">
                 GitHub
               </a>
-              <a href={links.cv} download className="underline hover:text-accent">
+              <a href={t.hero.cvFile} download className="underline hover:text-accent">
                 {t.hero.cv}
               </a>
             </div>
